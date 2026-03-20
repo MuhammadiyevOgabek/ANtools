@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Antools | #Oddiymizku</title>
+  </head>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-main: #1e252b;
+      --color-button: #ff6e30;
+      --color-input: #283036;
+      --fontFamily-poppins: "Poppins", sans-serif;
+    }
+  </style>
+  <body class="bg-main text-white/50 font-poppins text-base">
+    <div class="max-w-[1224px] mx-auto px-4">
+      <header class="flex justify-between items-center mt-[26px]">
+        <div class="flex gap-3">
+          <img src="img/logo.svg" class="w-[38px] h-[38px]" alt="logo" />
+          <span class="text-[22px] text-white">antools.</span>
+        </div>
+        <ul class="flex gap-x-[40px]">
+          <li>Home</li>
+          <li>Categories</li>
+          <li>My Collections</li>
+          <li>Blog</li>
+        </ul>
+        <div class="flex gap-x-[30px] items-center">
+          <p>login</p>
+          <button class="bg-button px-[28px] py-[12px] rounded-lg text-white">
+            Sign Up
+          </button>
+        </div>
+      </header>
+      <section class="flex mt-[58px]">
+        <div class="max-w-[600px]">
+          <h1 class="text-[50px] text-white mt-[46px]">
+            Awesome tools for Designer & Developer
+            <span class="text-button">.</span>
+          </h1>
+          <p
+            class="max-w-[487px] text-white/50 font-normal text-lg mt-[30px] mb-[60px]"
+          >
+            Antool is a web collection of information on paid or free Design and
+            Development tools
+          </p>
+          <div >
+            <form class=" relative bg-input max-w-[497px]  rounded-2xl">
+            <input
+              type="text"
+              class="pt-[21px] pb-[21px] pl-[55px]"
+              placeholder="find more than 430+ tools..."
+            />
+            <span class="absolute left-5 top-5"><i class="bx bx-search text-[24px]"></i></span>
+            <button class="absolute right-4 top-2 bg-button px-[28px] py-[12px] rounded-lg text-white">Search</button>
+          </form>
+          </div>
+          <div class="mt-[110px] flex gap-4">
+            <i class="bx bxl-facebook text-[58px]"></i>
+            <i class="bx bxl-instagram text-[58px]"></i>
+            <i class="bx bxl-twitter text-[58px]"></i>
+          </div>
+        </div>
+        <div>
+          <img src="img/Illustration.svg" alt="lustration" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
