@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Antools | #Oddiymizku</title>
   </head>
@@ -20,15 +17,15 @@
       --color-main: #1e252b;
       --color-button: #ff6e30;
       --color-input: #283036;
-      --fontFamily-poppins: "Poppins", sans-serif;
+      --color-logo: #2c353d33;
     }
   </style>
-  <body class="bg-main text-white/50 font-poppins text-base">
-    <div class="max-w-[1224px] mx-auto px-4">
+  <body class="bg-main text-white/50 font-fontFamily text-base">
+    <div id="container" class="max-w-[1224px] mx-auto">
       <header class="flex justify-between items-center mt-[26px]">
         <div class="flex gap-3">
           <img src="img/logo.svg" class="w-[38px] h-[38px]" alt="logo" />
-          <span class="text-[22px] text-white">antools.</span>
+          <span class="text-[22px] text-white font-semibold">antools.</span>
         </div>
         <ul class="flex gap-x-[40px]">
           <li>Home</li>
@@ -45,7 +42,7 @@
       </header>
       <section class="flex mt-[58px]">
         <div class="max-w-[600px]">
-          <h1 class="text-[50px] text-white mt-[46px]">
+          <h1 class="text-[50px] text-white font-medium mt-[46px]">
             Awesome tools for Designer & Developer
             <span class="text-button">.</span>
           </h1>
@@ -55,16 +52,22 @@
             Antool is a web collection of information on paid or free Design and
             Development tools
           </p>
-          <div >
-            <form class=" relative bg-input max-w-[497px]  rounded-2xl">
-            <input
-              type="text"
-              class="pt-[21px] pb-[21px] pl-[55px]"
-              placeholder="find more than 430+ tools..."
-            />
-            <span class="absolute left-5 top-5"><i class="bx bx-search text-[24px]"></i></span>
-            <button class="absolute right-4 top-2 bg-button px-[28px] py-[12px] rounded-lg text-white">Search</button>
-          </form>
+          <div>
+            <form class="relative bg-input max-w-[497px] rounded-2xl">
+              <input
+                type="text"
+                class="pt-[21px] pb-[21px] pl-[55px]"
+                placeholder="find more than 430+ tools..."
+              />
+              <span class="absolute left-5 top-5"
+                ><i class="bx bx-search text-[24px]"></i
+              ></span>
+              <button
+                class="absolute right-4 top-2 bg-button px-[28px] py-[12px] rounded-lg text-white"
+              >
+                Search
+              </button>
+            </form>
           </div>
           <div class="mt-[110px] flex gap-4">
             <i class="bx bxl-facebook text-[58px]"></i>
@@ -76,6 +79,389 @@
           <img src="img/Illustration.svg" alt="lustration" />
         </div>
       </section>
+      <div class="main mt-[200px] mb-[200px]">
+        <div class="flex justify-center items-center mb-[90px]">
+          <div class="max-w-[455px]">
+            <h2 class="text-[48px] text-white">Most Popular Tools</h2>
+            <p class="p-3 max-w-[427px] text-center">
+              Tools for the best Designers and Developers most popularly used in
+              the world
+            </p>
+          </div>
+        </div>
+        <ul class="flex flex-wrap gap-x-[24px] gap-y-[100px] group">
+          <!-- 1 -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img src="img/grommet-icons_figma.svg" alt="figma svg" />
+              <div>
+                <h3 class="text-white/70">FIGMA</h3>
+                <span class="text-button/55">Free</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+          <!-- 2 -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img src="img/logos_sketch.svg" alt="Sketch svg" />
+              <div>
+                <h3 class="text-white/70">Sketch</h3>
+                <span class="text-button/55">Trial & Paid</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+          <!-- 3 -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img
+                src="img/logos_visual-studio-code.svg"
+                alt="Visual Studio Code svg"
+              />
+              <div>
+                <h3 class="text-white/70">Visual Studio Code</h3>
+                <span class="text-button/55">Free</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+          <!-- 4 -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img src="img/notion.svg" alt="Notion svg" />
+              <div>
+                <h3 class="text-white/70">Notion</h3>
+                <span class="text-button/55">Free & Paid</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+          <!-- 5 -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img src="img/grommet-icons_slack.svg" alt="Slack svg" />
+              <div>
+                <h3 class="text-white/70">Slack</h3>
+                <span class="text-button/55">Free & Paid</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+          <!-- 6  -->
+          <li
+            class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[392px] p-[33px] bg-input rounded-2xl"
+          >
+            <div class="flex gap-[30px] mb-[30px]">
+              <img src="img/logos_invision-icon.svg" alt="Invision svg" />
+              <div>
+                <h3 class="text-white/70">Invision</h3>
+                <span class="text-button/55">Free & Paid</span>
+              </div>
+            </div>
+            <p class="mb-[30px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <i class="bx bxs-heart text-3xl"></i>
+                <i class="bx bxs-folder-plus text-3xl"></i>
+              </div>
+              <button
+                class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+              >
+                Visit
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="flex justify-center mt-[100px]">
+          <button class="text-button rounded-lg px-[38px] py-[9px] border">
+            Load more
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[1224px] bg-logo rounded-3xl mb-[200px]">
+        <div class="px-[55px] py-[82px]">
+          <h3 class="text-center font-medium mb-[55px] text-2xl">
+            Trusted more than 150+ brand
+          </h3>
+          <ul class="flex flex-wrap gap-[107px]">
+            <li><img src="img/logos_microsoft.png" alt="microsoft" /></li>
+            <li><img src="img/logos_google.png" alt="logos_google" /></li>
+            <li><img src="img/logos_slack.png" alt="logos_slack" /></li>
+            <li><img src="img/logos_wordpress.png" alt="logos_wordpress" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex gap-[190px] mb-[200px]">
+        <div>
+          <h3 class="text-[48px] text-white mb-[30px]">Newcomer Tools</h3>
+          <p class="mb-[60px]">
+            Wow! see the latest update of the most recommended tools from
+            reliable designers and developers
+          </p>
+          <button class="bg-button py-[15px] px-[40px] rounded-lg text-white">
+            Explore more
+          </button>
+        </div>
+        <div>
+          <ul class="flex flex-wrap gap-x-[20px] gap-y-[50px]">
+            <li
+              class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[288px] p-[33px] bg-input rounded-2xl"
+            >
+              <div class="flex gap-[30px] mb-[30px]">
+                <img src="img/zeplin.png" alt="Zeplin" />
+                <div>
+                  <h3 class="text-white/70">Zeplin</h3>
+                  <span class="text-button/55">Free & Paid</span>
+                </div>
+              </div>
+              <p class="mb-[30px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <i class="bx bxs-heart text-3xl"></i>
+                  <i class="bx bxs-folder-plus text-3xl"></i>
+                </div>
+                <button
+                  class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+                >
+                  Visit
+                </button>
+              </div>
+            </li>
+            <li
+              class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[288px] p-[33px] bg-input rounded-2xl"
+            >
+              <div class="flex gap-[30px] mb-[30px]">
+                <img src="img/jb_phpstorm.png" alt="PHPStorm" />
+                <div>
+                  <h3 class="text-white/70">PHPStorm</h3>
+                  <span class="text-button/55">Free</span>
+                </div>
+              </div>
+              <p class="mb-[30px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <i class="bx bxs-heart text-3xl"></i>
+                  <i class="bx bxs-folder-plus text-3xl"></i>
+                </div>
+                <button
+                  class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+                >
+                  Visit
+                </button>
+              </div>
+            </li>
+            <li
+              class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[288px] p-[33px] bg-input rounded-2xl"
+            >
+              <div class="flex gap-[30px] mb-[30px]">
+                <img src="img/jb_toolbox_app.png" alt="Toolbox" />
+                <div>
+                  <h3 class="text-white/70">Toolbox</h3>
+                  <span class="text-button/55">Free</span>
+                </div>
+              </div>
+              <p class="mb-[30px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <i class="bx bxs-heart text-3xl"></i>
+                  <i class="bx bxs-folder-plus text-3xl"></i>
+                </div>
+                <button
+                  class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+                >
+                  Visit
+                </button>
+              </div>
+            </li>
+            <li
+              class="group-hover:blur-sm hover:!blur-none cursor-pointer hover:scale-105 duration-300 max-w-[288px] p-[33px] bg-input rounded-2xl"
+            >
+              <div class="flex gap-[30px] mb-[30px]">
+                <img src="img/procreate.png" alt="Procreate" />
+                <div>
+                  <h3 class="text-white/70">Procreate</h3>
+                  <span class="text-button/55">Paid</span>
+                </div>
+              </div>
+              <p class="mb-[30px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <i class="bx bxs-heart text-3xl"></i>
+                  <i class="bx bxs-folder-plus text-3xl"></i>
+                </div>
+                <button
+                  class="py-[9px] px-[35px] bg-button text-white rounded-lg"
+                >
+                  Visit
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex gap-[57px] justify-center">
+        <div class="relative">
+          <img class="max-w-[399px]"  src="img/yigit .png" alt="yigit">
+          <div class="absolute right-2 bottom-5 bg-main px-[22px] py-[13px] rounded-lg">
+            <h3>Ronald Richards</h3>
+            <p>Product Manager</p>
+          </div>
+        </div>
+        <div class="max-w-[399px] mt-[129px]">
+          <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+        </div>
+      </div>
+      <div class="flex justify-center mb-[240px]"> 
+        <div class="max-w-[553px] mt-[250px] text-center">
+          <h3 class="text-[48px] text-white font-medium mt-[46px]">
+            Become a contributor?
+          </h3>
+          <p
+            class="max-w-[487px] text-white/50 font-normal text-lg mt-[30px] mb-[60px]"
+          >
+            Join us and get tips & tricks to become a great Designer and Developer
+          </p>
+          <div>
+            <form class="relative bg-input max-w-[553px] rounded-2xl">
+              <input
+                type="email"
+                class="pt-[21px] pb-[21px] pl-[55px]"
+                placeholder="Enter your email..."
+              />
+              <button
+                class="absolute right-4 top-2 bg-button px-[28px] py-[12px] rounded-lg text-white"
+              >
+                Join Us
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="mb-[50px]">
+        <ul class="flex gap-[115px]">
+          <li class="max-w-[260px]">
+            <div class="flex gap-3 mb-[20px]">
+              <img src="img/logo.svg" class="w-[38px] h-[38px]" alt="logo" />
+              <span class="text-[22px] text-white font-semibold">antools.</span>
+            </div>
+            <h4 class="mb-[21px] text-white">
+              Copyright 2021. Antools
+            </h4>
+            <p>
+              Antool is a web collection of information on paid or free Design and Development tools
+            </p>
+          </li>
+          <li>
+            <ul class="flex flex-col gap-y-[15px]">
+              <li class="text-white"> Contact Us</li>
+              <li>+621987463</li>
+              <li>M Building, No.10 A</li>
+              <li>antools@awesome.com</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="flex flex-col gap-y-[15px]">
+              <li class="text-white">Categories</li>
+              <li>Design</li>
+              <li>Development</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="flex flex-col gap-y-[15px]">
+              <li class="text-white">Company Info</li>
+              <li>About Us</li>
+              <li>Our Partners</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
